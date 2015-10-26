@@ -2,6 +2,7 @@
 
 LGE KDZ Utilities
 by IOMonster (thecubed on XDA)
+KDZ Header updated by Daniel Stuart
 
 -------------------------------------------
 
