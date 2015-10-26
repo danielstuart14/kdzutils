@@ -156,7 +156,7 @@ class KDZFileTools:
 
         # Verify KDZ header
         verify_header = self.infile.read(8)
-        if verify_header != self.kdz_header_new or verify_header != self.kdz_header_old:
+        if verify_header != self.kdz_header_new and verify_header != self.kdz_header_old:
             print "[!] Error: Unsupported KDZ file format."
             print "[ ] Expected: %s or\n%s ,\n\tbut received %s ." % (" ".join(hex(ord(n)) for n in self.kdz_header_new), " ".join(hex(ord(n)) for n in self.kdz_header_old), " ".join(hex(ord(n)) for n in verify_header))
             sys.exit(0)
